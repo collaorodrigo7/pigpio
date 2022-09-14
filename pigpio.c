@@ -7352,9 +7352,9 @@ static int initCheckPermitted(void)
          "\n" \
          "+---------------------------------------------------------+\n" \
          "|Sorry, this system does not appear to be a raspberry pi. |\n" \
-         "|aborting.                                                |\n" \
+         "|continueing                                              |\n" \
          "+---------------------------------------------------------+\n\n");
-      return -1;
+      // return -1;
    }
 
    if ((fdMem = open("/dev/mem", O_RDWR | O_SYNC) ) < 0)
